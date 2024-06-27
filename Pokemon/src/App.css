@@ -1,0 +1,133 @@
+#root {
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensure padding and borders don't affect element width */
+}
+
+body {
+  background-image: url(./assets/pokemon.Img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  margin-bottom: 1%;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+.pokemon-cards {
+  padding: 1%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  width: 100%;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 20px; /* Adjust as needed */
+  width: 100%;
+  /* max-width: 1200px; /* Set a max-width for the grid */
+  justify-items: center; /* Center items within each grid cell */
+}
+
+.pokemon {
+  border: 1px solid green;
+  border-radius: 20px;
+  padding: 1%;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 2em;
+  width: 100%; /* Ensure Pokémon cards take full width of grid cell */
+}
+
+h1 {
+  text-align: center;
+  padding: 1%;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Updated .pokemon class with background colors */
+.pokemon {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 1%;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 2em;
+  width: 100%;
+}
+
+.types-container span {
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+/* Define classes for each type 
+.bug {
+  background-color: #a8b820;
+}
+.dragon {
+  background-color: #7038f8;
+}
+.electric {
+  background-color: #f8d73c;
+}
+.fight {
+  background-color: #c03028;
+}
+.fire {
+  background-color: #f08030;
+}
+.flying {
+  background-color: #a18cda;
+}
+.ghost {
+  background-color: #705898;
+}
+.grass {
+  background-color: #78c850;
+}
+.ground {
+  background-color: #e0c068;
+}
+.ice {
+  background-color: #98d8d8;
+}
+.normal {
+  background-color: #a8a878;
+}
+.poison {
+  background-color: #a040a0;
+}
+.psychic {
+  background-color: #f85888;
+}
+.rock {
+  background-color: #b8a038;
+}
+.water {
+  background-color: #6890f0;
+}
+ */
